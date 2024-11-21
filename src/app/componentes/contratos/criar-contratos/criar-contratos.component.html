@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="estilo.css">
+
+<div class="container text-center central mt-5">
+    <div class="row align-items-center p-4 rounded shadow bg-light quadro">
+        <div class="col-md-6 text-left historia">
+            <h2>Conheça nossas academias</h2>
+            <p>
+                Lorem ipsum semper cursus curabitur non ut nullam et diam non, donec elit velit massa
+                sapien consequat porta vehicula id fermentum, nulla laoreet nisi luctus blandit eros 
+                consequat porta luctus. 
+                velit imperdiet quis orci curae eleifend rhoncus class sociosqu vel non quam, proin pr
+                etium dolor porta adipiscing pulvinar est a turpis curabitur. 
+            </p>
+        </div>
+        
+        <div class="col-md-6 matricula">
+
+            <form>
+                <p>Matricule-se</p>
+                <label for="pensamento">Nome completo</label>
+                <input type="text" class="form-control mb-3" id="Nome" name="Nome" placeholder="Digite o seu nome completo"
+                       [(ngModel)]="contrato.nome">
+                <label for="autoria">E-mail</label>
+                <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Digite seu e-mail"
+                       [(ngModel)]="contrato.email" >
+                <label for="autoria">Número de contato</label>
+                <input type="number" class="form-control mb-3" id="telefone" name="telefone" placeholder="Digite seu telefone"
+                       [(ngModel)]="contrato.telefone" >
+
+                <div class="acoes d-flex justify-content-between">
+                    <button (click)="criarContrato()" class="btn btn-matricula">Continuar matricula</button>
+                    <button (click)="cancelar()" routerLink="/matriculas" class="btn btn-secondary">Cancelar</button>
+                </div>
+
+            </form>     
+        </div>
+    </div>
+</div>
