@@ -1,39 +1,76 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="estilo.css">
+<link rel="stylesheet" href="criar-contratos.component.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
 
-<div class="container text-center central mt-5">
-    <div class="row align-items-center p-4 rounded shadow bg-light quadro">
-        <div class="col-md-6 text-left historia">
-            <h2>Conheça nossas academias</h2>
-            <p>
-                Lorem ipsum semper cursus curabitur non ut nullam et diam non, donec elit velit massa
-                sapien consequat porta vehicula id fermentum, nulla laoreet nisi luctus blandit eros 
-                consequat porta luctus. 
-                velit imperdiet quis orci curae eleifend rhoncus class sociosqu vel non quam, proin pr
-                etium dolor porta adipiscing pulvinar est a turpis curabitur. 
-            </p>
-        </div>
-        
-        <div class="col-md-6 matricula">
+<main>
 
-            <form>
-                <p>Matricule-se</p>
-                <label for="pensamento">Nome completo</label>
-                <input type="text" class="form-control mb-3" id="Nome" name="Nome" placeholder="Digite o seu nome completo"
-                       [(ngModel)]="contrato.nome">
-                <label for="autoria">E-mail</label>
-                <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Digite seu e-mail"
-                       [(ngModel)]="contrato.email" >
-                <label for="autoria">Número de contato</label>
-                <input type="number" class="form-control mb-3" id="telefone" name="telefone" placeholder="Digite seu telefone"
-                       [(ngModel)]="contrato.telefone" >
-
-                <div class="acoes d-flex justify-content-between">
-                    <button (click)="criarContrato()" class="btn btn-matricula">Continuar matricula</button>
-                    <button (click)="cancelar()" routerLink="/matriculas" class="btn btn-secondary">Cancelar</button>
-                </div>
-
-            </form>     
+    <div class="container text-center central mt-5">
+        <div class="row align-items-center p-4 rounded shadow bg-light quadro">
+            <div class="col-md-6 text-left historia">
+                
+                <h2>Conheça as Academias Lion </h2>
+                    <h3>Onde Sua Transformação Começa</h3>
+                        <p class="text-justify">
+                            Há mais de uma década, as Academias Lion vêm transformando vidas e ajudando pessoas a alcançar seus objetivos de saúde,
+                            bem-estar e performance física. Com uma trajetória marcada pela excelência e dedicação, nos consolidamos como referência
+                            no setor, proporcionando experiências que vão além de um simples treino.
+                        </p>
+                    <h3>Qualidade que Você Sente em Cada Detalhe</h3>
+                        <p class="text-justify">
+                            Nosso compromisso com a qualidade está presente em cada aspecto das Academias Lion: desde nossos espaços modernos e bem equipados
+                            até a formação de nossa equipe de profissionais. Contamos com instrutores qualificados e apaixonados pelo que fazem, sempre prontos para
+                            guiar você em um treinamento personalizado e eficaz. Aqui, cada aluno é único, e nossos programas são desenvolvidos para atender suas 
+                            necessidades específicas, seja para melhorar sua saúde, emagrecer, ganhar massa muscular ou preparar-se para um desafio esportivo.
+                        </p>
+    
+                    <h3>Inspirador e Motivador</h3>
+                        <p class="text-justify">
+                            Na Lion, você encontra um ambiente acolhedor e motivador, ideal para superar limites e conquistar resultados reais. 
+                            Estamos sempre investindo em equipamentos de última geração e infraestrutura de ponta, porque sabemos que o seu conforto
+                            e desempenho são prioridades. Além disso, promovemos um clima de comunidade, onde você pode treinar ao lado de pessoas 
+                            com o mesmo propósito: transformar suas vidas.
+                        </p>
+    
+                    <h3>Sua Melhor Escolha para um Estilo de Vida Saudável</h3>
+                        <p class="text-justify">
+                            Acreditamos que cuidar do corpo é essencial para viver bem, e nas Academias Lion você terá todas as ferramentas e 
+                            suporte para alcançar uma rotina saudável e ativa. Não importa sua idade ou nível de condicionamento físico, estamos 
+                            aqui para ajudá-lo a dar o primeiro passo e seguir firme no caminho das suas metas.
+                        </p>
+    
+            </div>
+            
+            <div class="col-md-6 matricula">
+    
+                <form>
+                    <h3>Transforme Sua Vida Hoje!</h3>
+                        <p class="text-justify">Chegou a hora de se colocar em primeiro lugar e investir na sua saúde. Venha fazer parte da família Lion
+                         e descubra porque somos a escolha de quem busca qualidade, resultados e um atendimento diferenciado.</p>
+                    <br><br>
+                        <h2 class="piscar">Matricule-se agora</h2> 
+                        <p>e dê início à sua transformação com quem entende do assunto!</p>
+                    <br>
+                    
+                    <label for="pensamento" class="text-left">Nome completo</label>
+                    <input type="text" class="form-control mb-3" id="Nome" name="Nome" placeholder="Digite o seu nome completo"
+                           [(ngModel)]="contrato.nome">
+                    <label for="autoria" class="text-left">E-mail</label>
+                    <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Digite seu e-mail"
+                           [(ngModel)]="contrato.email" >
+                    <label for="autoria" class="text-left">Número de contato</label>
+                    <input type="number" class="form-control mb-3" id="telefone" name="telefone" placeholder="Digite seu telefone"
+                           [(ngModel)]="contrato.telefone" >
+    
+                    <div class="acoes d-flex justify-content-between">
+                        <button (click)="criarContrato()" class="btn btn-matricula">Continuar matricula</button>
+                        <button (click)="cancelar()" routerLink="/matriculas" class="btn btn-secondary">Cancelar</button>
+                    </div>
+                </form>   
+                <img src="https://i.pinimg.com/736x/44/2c/87/442c8773f9f0cb5c209f5b46ec7d1da0.jpg"
+                    alt="Lions logo" width="500" height="318">
+            </div>
         </div>
     </div>
-</div>
+
+    </main>

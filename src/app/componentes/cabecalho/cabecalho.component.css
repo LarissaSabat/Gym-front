@@ -1,23 +1,32 @@
 .cabecalho {
-    width: 100%;
-    background-color:black;
-    height: 100px;
-    display: flex;
-
-  }
-.img-logo{
-    widows: 100px;
-    height: 100px;
-    z-index: 1;
-    justify-content: center;
-}
-.menu{
-  color: white!important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   width: 100%;
-  height: 50px;
+  background-color:black;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  z-index: 1000;
+}
+.img-logo{
   z-index: 1;
+  justify-content: left;
+  display: flex;
+}
+
+.bebas-neue-regular {
+font-family: "Bebas Neue", sans-serif;
+font-weight: 400;
+font-style: normal;
+  font-size: larger;
+}
+
+.menu, .bebas-neue-regular{
+color: white!important;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 60px;
+z-index: 1;
 }
